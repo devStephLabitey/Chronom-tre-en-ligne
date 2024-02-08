@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,500;1,700;1,900&family=Mochiy+Pop+One&family=Montserrat:wght@400;600;700&family=Nosifer&family=Playpen+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500&family=Skranji:wght@400;700&family=Sulphur+Point:wght@300;400;700&family=Titan+One&display=swap');
+*{
+    font-family: "poppins";
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #030027;
+}
+
+.chronometer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#display {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+    
+}
+
+
+
+#records {
+    list-style-type: none;
+    padding: 0;
+}
+.bt button{
+    cursor: pointer;
+    color: white;
+    background-color: #0d0191;
+    border: none;
+    padding: 10px 15px;
+    margin: 1vh;
+    border-radius: 3vh;
+}
+.bt button:hover{
+    box-shadow: 3px 6px 9px 6px rgba(0, 0, 0, 0.712);
+}
+
+ul{
+   
+    color: white;
+}
+.alarm{
+    position: absolute;
+    top: 0;
+    margin: 4vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3VH 6VH;
+    width: 25vh;
+    height: 30vh;
+    color: white;
+    border-radius: 1vh;
+    background:#1002a7;
+    box-shadow: 6px 4px 6px 3px rgba(0, 0, 0, 0.445);
+}
+.alarm .create{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.alarm  .inter{
+    font-size: 2vh;
+    margin: 1vh;
+}
+.alarm input{
+    border-radius: 2px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    margin: 1vh;
+    
+}
+.alarm button{
+    border-radius: 2px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5vh;
+    cursor: pointer;
+    background: #ffffff46;
+    border-radius: 4vh;
+    color: white;
+    font-weight: 700;
+}
+.alarm button:hover{
+    color: #0d0191;
+    background: white;
+}
+.chr{
+    color: white;
+    position: absolute;
+    right: 4vh;
+    top: 4vh;
+    background:#1002a7;
+    font-size: 1.5em;
+    font-weight: 800;
+    padding: 10px 40px;
+    border-radius:42px 5px 42px 5px;
+}

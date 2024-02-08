@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chronomètre</title>
+</head>
+<body>
+    <div class="chr">
+        Chronomètre en ligne 
+    </div>
+    <div class="chronometer">
+        <img src="./horlo2-removebg-preview.png" alt="">
+        <span id="display">00:00:00</span>
+   <div class="bt">
+    <button id="startStop" onclick="startStop()">Démarrer</button>
+    <button id="reset" onclick="reset()">Réinitialiser</button>
+    <button id="record" onclick="record()">Enregistrer</button>
+   </div>
+        <ul id="records"></ul>
+        
+    </div>
+
+    <div class="alarm">
+        <label for="" class="create">Créer une alarme</label>
+        <label for="alarmInterval" class="inter">Intervalle d'alarme (en secondes):</label>
+        <input type="number" id="alarmInterval" placeholder="Entrez l'intervalle en secondes">
+        <button onclick="setAlarm()">Définir l'alarme</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
